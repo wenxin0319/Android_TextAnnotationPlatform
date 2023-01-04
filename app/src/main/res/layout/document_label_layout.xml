@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.TAP.TAP.MainActivity">
+
+    <com.TAP.TAP.NoScrollViewPager
+        android:id="@+id/document_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <RadioGroup
+        android:id="@+id/document_label_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/document_search_vp_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/task_selector"
+            android:background="@drawable/main_tabs_style"
+            android:text="@string/document_search"
+            android:textColor="@drawable/radio_textcolor_seletor"/>
+
+        <RadioButton
+            android:id="@+id/document_label_vp_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/label_selector"
+            android:background="@drawable/main_tabs_style"
+            android:text="@string/document_label"
+            android:textColor="@drawable/radio_textcolor_seletor"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>

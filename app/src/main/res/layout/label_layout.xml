@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/prev_sentence"
+            android:id="@+id/label_prev_sentence_button"
+            android:layout_marginLeft="4dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/next_sentence"
+            android:id="@+id/label_next_sentence_button"
+            android:layout_marginRight="4dp"/>
+    </LinearLayout>
+
+    <com.TAP.TAP.LabelCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="260dp"
+        android:minHeight="120dp"
+        android:id="@+id/label_content_full"
+        android:textStyle="normal"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:textIsSelectable="true"
+        android:scrollbars="vertical"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="52dp"
+        android:gravity="bottom">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="120dp"
+                android:id="@+id/label_action_list">
+
+            </ListView>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_group"
+
+                android:isScrollContainer="true">
+
+            </RadioGroup>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
